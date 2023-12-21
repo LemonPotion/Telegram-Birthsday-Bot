@@ -8,6 +8,7 @@
     using WebApplication3.Controllers;
     using WebApplication3.DataBase;
     using Newtonsoft.Json;
+    using Telegram.Bot.Types.Enums;
 
     public class TG
     {
@@ -59,18 +60,21 @@
             {
                 var message = update.Message;//получаем сообщение
 
-                if (message != null && message.Text != null)//проверяем на null и проверяем текст , вдруг пользователь скинет картинку
+                if (message.Chat.Type == ChatType.Group || message.Chat.Type == ChatType.Supergroup || message.Chat.Type == ChatType.Channel)
                 {
-                    Console.WriteLine($"{message.Chat.Username}|{message.Text}");//мониторим запросы в консоли
+                    if (message != null && message.Text != null)//проверяем на null и проверяем текст , вдруг пользователь скинет картинку
+                    {
+                        Console.WriteLine($"{message.Chat.Username}|{message.Text}");//мониторим запросы в консоли
 
-                    if (message.Text.Contains("/start"))//если true то отправляется сообщение
-                    {
-                        chatID = update.Message.Chat.Id.ToString();
-                        SendMessage(client);
-                    }
-                    else
-                    {
-                        await client.SendTextMessageAsync(message.Chat.Id, $"Для начала работы введите /start");//подсказка пользователю
+                        if (message.Text.Contains("/start"))//если true то отправляется сообщение
+                        {
+                            chatID = update.Message.Chat.Id.ToString();
+                            SendMessage(client);
+                        }
+                        else
+                        {
+                            await client.SendTextMessageAsync(message.Chat.Id, $"Для начала работы введите /start");//подсказка пользователю
+                        }
                     }
                 }
             }
