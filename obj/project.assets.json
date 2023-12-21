@@ -1974,9 +1974,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lemon\\OneDrive\\Рабочий стол\\WebApplication3\\WebApplication3.csproj",
-      "projectName": "WebApplication3",
-      "projectPath": "C:\\Users\\Lemon\\OneDrive\\Рабочий стол\\WebApplication3\\WebApplication3.csproj",
+      "projectUniqueName": "C:\\Users\\Lemon\\OneDrive\\Рабочий стол\\WebApplication3\\Tg birthsday bot.csproj",
+      "projectName": "Tg birthsday bot",
+      "projectPath": "C:\\Users\\Lemon\\OneDrive\\Рабочий стол\\WebApplication3\\Tg birthsday bot.csproj",
       "packagesPath": "C:\\Users\\Lemon\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lemon\\OneDrive\\Рабочий стол\\WebApplication3\\obj\\",
       "projectStyle": "PackageReference",

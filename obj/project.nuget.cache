@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+hZSnaLadqjHqru+zZKfvc6xYYtojo2arkfKLurIabBc9uCoAQ/360JOHfgGpEgh//f/+XnjOaw/qwYlPPNN1w==",
+  "dgSpecHash": "ogtkyM0s+JvDrwpFcK9qOgJhKwfrLiKXCc9BXb4z1tHYW+KmNK8lDOq4AWnY8jBatawl6pMGxElaI66bYPLQfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lemon\\OneDrive\\Рабочий стол\\WebApplication3\\WebApplication3.csproj",
+  "projectFilePath": "C:\\Users\\Lemon\\OneDrive\\Рабочий стол\\WebApplication3\\Tg birthsday bot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lemon\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Lemon\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
