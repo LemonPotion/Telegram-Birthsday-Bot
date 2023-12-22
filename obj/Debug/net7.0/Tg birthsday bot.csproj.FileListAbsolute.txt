@@ -1,6 +1,5 @@
 C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\bin\Debug\net7.0\appsettings.json
-C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\bin\Debug\net7.0\employees.json
 C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\bin\Debug\net7.0\Tg birthsday bot.exe
 C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\bin\Debug\net7.0\Tg birthsday bot.deps.json
 C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\bin\Debug\net7.0\Tg birthsday bot.runtimeconfig.json
@@ -56,3 +55,4 @@ C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\obj\Debug\net7.0
 C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\obj\Debug\net7.0\Tg birthsday bot.pdb
 C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\obj\Debug\net7.0\Tg birthsday bot.genruntimeconfig.cache
 C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\obj\Debug\net7.0\ref\Tg birthsday bot.dll
+C:\Users\Lemon\OneDrive\Рабочий стол\WebApplication3\bin\Debug\net7.0\Quartz.Extensions.DependencyInjection.dll

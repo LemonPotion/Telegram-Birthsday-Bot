@@ -1,5 +1,6 @@
 ﻿using Quartz.Impl;
 using Quartz;
+using WebApplication3.DataBase;
 
 namespace WebApplication3.Quartz
 {
@@ -9,19 +10,18 @@ namespace WebApplication3.Quartz
         {
             ISchedulerFactory schedulerFactory = new StdSchedulerFactory();//Создаем экзмепляр планировщика
 
-            IScheduler scheduler = await schedulerFactory.GetScheduler();//Создаем планировщик
+            IScheduler scheduler = await schedulerFactory.GetScheduler();
+            await scheduler.Start();
 
-            await scheduler.Start();//запускаем
-
-            IJobDetail jobDetail = JobBuilder.Create<Job>().WithIdentity("BotStart","Telegram").Build();//создаем задачу описанную в классе Job
-
+            IJobDetail jobDetail = JobBuilder.Create<Job>().WithIdentity("BotStart", "Telegram").Build();//создаем задачу описанную в классе Job
+            
             ITrigger trigger = TriggerBuilder.Create().WithIdentity("1", "Telegram").StartNow().//триггер который будет срабатывать каждый день в 9:00 с интервалом 24 часа
-                WithDailyTimeIntervalSchedule(s =>s.WithIntervalInHours(24)
+                WithDailyTimeIntervalSchedule(s => s.WithIntervalInHours(24)
                 .OnEveryDay()
-                .StartingDailyAt(TimeOfDay.HourAndMinuteOfDay(9, 0)))
+                .StartingDailyAt(TimeOfDay.HourAndMinuteOfDay(21, 33)))
                 .Build();
-
-            await scheduler.ScheduleJob(jobDetail,trigger);//Передаем планировщику триггер и задачу
+            await scheduler.ScheduleJob(jobDetail, trigger);//Передаем планировщику триггер и задачу
         }
+
     }
 }

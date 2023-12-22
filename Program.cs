@@ -10,7 +10,6 @@ namespace WebApplication3
 {
     public class Program
     {
-        private readonly AppDbContext _context;
 
         public static void Main(string[] args)
         {
@@ -47,7 +46,7 @@ namespace WebApplication3
 
             //Добавление контроллеров , в контроллерах прописаны действия
             app.MapControllers();
-            Trigger.trigger();
+            Trigger.trigger().Wait();
             TG tg = new TG();
             tg.start();
             app.Run();

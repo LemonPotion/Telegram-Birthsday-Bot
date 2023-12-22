@@ -18,34 +18,6 @@ namespace WebApplication3.Controllers
             _context = context;
         }
 
-        [HttpGet("GetList")]
-        public IActionResult GetList() //IActionResult - результат выполнения контроллера
-        {
-            var employees = _context.entities.ToList();
-
-            // Путь к директории проекта
-            var projectDirectory = Directory.GetCurrentDirectory();
-
-            // Путь к файлу JSON в директории проекта
-            var jsonFilePath = Path.Combine(projectDirectory, "employees.json");
-
-            try
-            {
-                // Сериализация списка в формат JSON и запись в файл
-                var json = JsonSerializer.Serialize(employees);
-                System.IO.File.WriteAllText(jsonFilePath, json);
-
-                // Возвращаем успешный результат
-                return Ok(employees);
-            }
-            catch (Exception ex)
-            {
-                // Обработка возможных ошибок и возвращение ответа с ошибкой
-                return StatusCode(500, $"Error: {ex.Message}");
-            }
-
-        }
-
         [HttpGet("id")]//GET id
         public IActionResult GetEmployeeById(int id) //IActionResult - результат выполнения контроллера
         {

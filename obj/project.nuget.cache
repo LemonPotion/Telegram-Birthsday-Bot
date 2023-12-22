@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ogtkyM0s+JvDrwpFcK9qOgJhKwfrLiKXCc9BXb4z1tHYW+KmNK8lDOq4AWnY8jBatawl6pMGxElaI66bYPLQfQ==",
+  "dgSpecHash": "RMyH/4C5K/o5j6ONrjgUkGBrGFa69i78sjD/jOcrI8uH3E5d2zGr4Jl9iPaHbhQi1vO1Tx3raTCH0G0AwLv5vw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lemon\\OneDrive\\Рабочий стол\\WebApplication3\\Tg birthsday bot.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\Lemon\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
     "C:\\Users\\Lemon\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
     "C:\\Users\\Lemon\\.nuget\\packages\\quartz\\3.8.0\\quartz.3.8.0.nupkg.sha512",
+    "C:\\Users\\Lemon\\.nuget\\packages\\quartz.extensions.dependencyinjection\\3.8.0\\quartz.extensions.dependencyinjection.3.8.0.nupkg.sha512",
     "C:\\Users\\Lemon\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Lemon\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\Lemon\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
